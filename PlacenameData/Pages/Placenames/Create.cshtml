@@ -1,0 +1,59 @@
+﻿@page
+@model PlacenameData.Pages.Placenames.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Placename</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Placename.Name" class="control-label"></label>
+                <input asp-for="Placename.Name" class="form-control" />
+                <span asp-validation-for="Placename.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Placename.Nation" class="control-label"></label>
+                <input asp-for="Placename.Nation" class="form-control" />
+                <span asp-validation-for="Placename.Nation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Placename.Region" class="control-label"></label>
+                <input asp-for="Placename.Region" class="form-control" />
+                <span asp-validation-for="Placename.Region" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Placename.Parish" class="control-label"></label>
+                <input asp-for="Placename.Parish" class="form-control" />
+                <span asp-validation-for="Placename.Parish" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Placename.ParishShort" class="control-label"></label>
+                <input asp-for="Placename.ParishShort" class="form-control" />
+                <span asp-validation-for="Placename.ParishShort" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Placename.DateEntered" class="control-label"></label>
+                <input asp-for="Placename.DateEntered" class="form-control" />
+                <span asp-validation-for="Placename.DateEntered" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
