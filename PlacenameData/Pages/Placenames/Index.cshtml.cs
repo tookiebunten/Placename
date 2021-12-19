@@ -21,10 +21,10 @@ namespace PlacenameData.Pages.Placenames
             _context = context;
         }
 
-        public IList<Placename> Placename { get;set; }
+        public IList<Placename> Name { get;set; }
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
-        public SelectList Name { get; set; }
+        public SelectList Parish { get; set; }
         [BindProperty(SupportsGet = true)]
         public string PlaceType { get; set; }
 
@@ -34,11 +34,11 @@ namespace PlacenameData.Pages.Placenames
                             select p;
             if (!string.IsNullOrEmpty(SearchString))
             {
-                placename = placename.Where(s => s.Name.Contains(SearchString);
+                placename = placename.Where(s => s.Name.Contains(SearchString));
             }
 
 
-            Name = await _context.placename.ToListAsync();
+            Name = await placename.ToListAsync();
         }
     }
 }
