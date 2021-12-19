@@ -3,7 +3,7 @@ Somewhere to dump my place-name notes and research. I have multiple files, sprea
 
 ## Data tables
 
-![alt text](https://github.com/tookiebunten/Placenames/blob/4c8703430da410da1bb6132d9a7657f4c64539bd/images/Drawing1.png)
+![alt text](https://github.com/tookiebunten/Placename/blob/1201688055cc98fbb1e65d0f0d0bc6f4badb9a99/Drawing1.png)
 
 ## Data table structure
 Structure of tables and example data
