@@ -10,19 +10,20 @@ namespace PlacenameData.Models
 
         [Required]
         [StringLength(100)]
-        public string Name { get; set; } = string.Empty; //placename 
+        public string Name { get; set; }  //placename 
 
         [StringLength(100)]
-        public string Nation { get; set; } = string.Empty; //nation of placename eg Scotland
+        public string Nation { get; set; }  //nation of placename eg Scotland
 
         [StringLength(100)]
-        public string Region { get; set; } = string.Empty; //region of placename eg South Lanarkshire
+        public string Region { get; set; }  //region of placename eg South Lanarkshire
 
         [StringLength(100)]
-        public string Parish { get; set; } = string.Empty; //parish of placename eg Lesmahagow
+        public string Parish { get; set; }  //parish of placename eg Lesmahagow
 
+        [Display(Name ="Parish Short")]
         [StringLength(3)]
-        public string ParishShort { get; set; } = string.Empty; //short version of placename eg LEW
+        public string ParishShort { get; set; }  //short version of placename eg LEW
 
         [Display(Name = "Date Entered")]
         [DataType(DataType.Date)]
