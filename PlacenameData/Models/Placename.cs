@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PlacenameData.Models
 {
@@ -23,6 +24,7 @@ namespace PlacenameData.Models
         [StringLength(3)]
         public string ParishShort { get; set; } = string.Empty; //short version of placename eg LEW
 
+        [Display(Name = "Date Entered")]
         [DataType(DataType.Date)]
         public DateTime DateEntered { get; set; } //might not need
 
