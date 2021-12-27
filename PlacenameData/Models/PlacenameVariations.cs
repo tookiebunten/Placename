@@ -15,5 +15,7 @@ namespace PlacenameData.Models
         public DateTime VariationSourceDate { get; set; } //just needs to be set to 4 digit year
         public string VariationComments { get; set; } //user comments about the variation
 
+        public ICollection<Placename> Placenames { get; set; }
+
     }
 }

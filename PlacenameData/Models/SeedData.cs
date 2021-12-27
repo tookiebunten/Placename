@@ -13,7 +13,7 @@ namespace PlacenameData.Models
             {
                 if (context == null || context.Placename == null)
                 {
-                    throw new ArgumentNullException("Null RazorPagesMovieContext");
+                    throw new ArgumentNullException("Null PlacenamesDataContext");
                 }
 
                 // Look for any movies.
