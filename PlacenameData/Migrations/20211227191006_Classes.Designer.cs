@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PlacenameData.Data;
 
@@ -11,9 +12,10 @@ using PlacenameData.Data;
 namespace PlacenameData.Migrations
 {
     [DbContext(typeof(PlacenameDataContext))]
-    partial class PlacenameDataContextModelSnapshot : ModelSnapshot
+    [Migration("20211227191006_Classes")]
+    partial class Classes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
