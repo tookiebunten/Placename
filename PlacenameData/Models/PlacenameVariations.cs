@@ -1,4 +1,7 @@
-﻿namespace PlacenameData.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace PlacenameData.Models
 {
     public class PlacenameVariations
     {
