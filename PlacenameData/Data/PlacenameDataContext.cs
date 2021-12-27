@@ -16,5 +16,8 @@ namespace PlacenameData.Data
         }
 
         public DbSet<PlacenameData.Models.Placename> Placename { get; set; }
+        public DbSet<PlacenameData.Models.PlacenameVariations> PlacenameVariations { get; set; }
+        public DbSet<PlacenameData.Models.PlacenameCoordinates> PlacenameCoordinates { get; set;}
+        public DbSet<PlacenameData.Models.PlacenameNotes> PlacenameNotes { get; set;}
     }
 }

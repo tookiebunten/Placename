@@ -19,4 +19,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\PlacenameCoordinates\" />
+    <Folder Include="Pages\PlacenameVariations\" />
+    <Folder Include="Pages\PlacenameNotes\" />
+  </ItemGroup>
+
 </Project>
