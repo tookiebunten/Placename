@@ -8,7 +8,7 @@ namespace PlacenameData.Models
 
         //id NameId VariationSpelling VariationSource VariationSourceDate VariationComments
 
-        public int Id { get; set; }
+        public int VariationId { get; set; }
         public string NameId { get; set; } //from PlacenameData.Models.Placename.NameId
         public string VariationSpelling { get; set; } //spelling variation of place-name
         public string VariationSource { get; set; } //source of variation, web address, journal, book etc
