@@ -1,0 +1,3 @@
+# How to contribute
+---
+Really still trying to figure this out...
